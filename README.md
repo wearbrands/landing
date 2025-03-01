@@ -1,2 +1,3 @@
 # landing
-landing page
+
+Landing page for WearBrands site.
