@@ -4,7 +4,7 @@
 
 📌 *Как заказать*  
 
-Выбирайте товары в нашем [Telegram-чате](#) или [Instagram](#), либо на официальных сайтах брендов:  
+Выбирайте товары в нашей [Telegram-группе](https://t.me/wear_brands_spain) или [Instagram](https://www.instagram.com/wearbrand.s/), либо на официальных сайтах брендов:  
 
 ▫️ [Dior](https://www.dior.com/es_es/fashion)  
 ▫️ [Louis Vuitton](https://es.louisvuitton.com/esp-es/homepage)  
