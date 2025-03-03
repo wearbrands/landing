@@ -23,19 +23,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
       
       - name: Install dependencies
-        run: npm install -g html-minifier
+        run: npm ci
       
-      - name: Minify HTML
-        run: |
-          mkdir -p dist
-          html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype index.html -o dist/index.html
+      - name: Build project
+        run: npm run build
       
-      - name: Copy static assets
+      - name: Copy static assets to dist
         run: |
-          cp -r statics dist/
-
+          cp -r public/* dist/ 2>/dev/null || :
+      
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
