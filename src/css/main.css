@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Tailwind theme configurations moved from config file */
+:root {
+  --brand-black: #111111;
+  --brand-gray: #f8f8f8;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+/* Custom styles from your original file */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  color: var(--brand-black);
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/statics/img/backgrounds/parallax_2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-image {
+  background-image: url('/statics/img/backgrounds/parallax_1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.hidden-section {
+  display: none;
+}
+
+.lang-active {
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.7s ease-out;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* You can use the variables in other places */
+.bg-brand-gray {
+  background-color: var(--brand-gray);
+}
+
+.text-brand-black {
+  color: var(--brand-black);
+}

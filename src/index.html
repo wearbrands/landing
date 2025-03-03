@@ -8,65 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'montserrat': ['Montserrat', 'sans-serif'],
-                    },
-                    colors: {
-                        'brand-black': '#111111',
-                        'brand-gray': '#f8f8f8',
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-        .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/statics/img/backgrounds/parallax_2.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .section-image {
-            background-image: url('/statics/img/backgrounds/parallax_1.png');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 400px;
-        }
-        .hidden-section {
-            display: none;
-        }
-        .lang-active {
-            font-weight: 600;
-            border-bottom: 2px solid black;
-        }
-        .animate-fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .animate-slide-up {
-            animation: slideUp 0.7s ease-out;
-        }
-        @keyframes slideUp {
-            0% { transform: translateY(30px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-    </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EGLHEPVD9"></script>
     <script>
@@ -75,6 +16,9 @@
         gtag('js', new Date());
         gtag('config', 'G-4EGLHEPVD9');
     </script>
+    <!-- Vite will automatically inject CSS and JS -->
+    <script type="module" src="./js/main.js"></script>
+    <link href="./css/main.css" rel="stylesheet">
 </head>
 <body class="text-brand-black bg-white">
     <!-- Header -->
