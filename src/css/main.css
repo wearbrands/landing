@@ -19,14 +19,14 @@ body {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/statics/img/backgrounds/parallax_2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/backgrounds/parallax_2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .section-image {
-  background-image: url('/statics/img/backgrounds/parallax_1.png');
+  background-image: url('/img/backgrounds/parallax_1.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
