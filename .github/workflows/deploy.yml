@@ -30,11 +30,22 @@ jobs:
       
       - name: Build project
         run: npm run build
+
+      - name: Add version to HTML files
+        run: |
+          TIMESTAMP=$(date +%s)
+          find dist -name "*.html" -exec sed -i "s/<\/head>/<meta name=\"version\" content=\"${TIMESTAMP}\"\/><\/head>/g" {} \;
       
       - name: Copy static assets to dist
         run: |
           cp -r public/* dist/ 2>/dev/null || :
       
+      - name: Install Cloudflare CLI
+        run: npm install -g cloudflare
+      
+      - name: Purge Cloudflare Cache
+        run: |
+          cloudflare purge-cache --zone ${{ secrets.CLOUDFLARE_ZONE_ID }} --token ${{ secrets.CLOUDFLARE_API_TOKEN }}
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
