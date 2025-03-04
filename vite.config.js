@@ -7,13 +7,16 @@ export default defineConfig({
     tailwindcss(),
   ],
   
+  // Set the root directory to src
+  root: 'src',
+  
   // Base public path when served in production
   base: '/',
   
   // Configure the build output
   build: {
     // Output directory (relative to project root)
-    outDir: 'dist',
+    outDir: '../dist',
     
     // Empty the outDir before building
     emptyOutDir: true,
@@ -24,13 +27,9 @@ export default defineConfig({
     // Configure CSS output
     cssMinify: true,
     
-    // Configure code splitting
+    // Keep your asset configuration
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'src/index.html'),
-      },
       output: {
-        // Chunk naming format
         entryFileNames: 'assets/js/[name]-[hash].js',
         chunkFileNames: 'assets/js/[name]-[hash].js',
         assetFileNames: (assetInfo) => {
