@@ -40,12 +40,13 @@ jobs:
         run: |
           cp -r public/* dist/ 2>/dev/null || :
       
-      - name: Install Cloudflare CLI
-        run: npm install -g cloudflare
-      
       - name: Purge Cloudflare Cache
         run: |
-          cloudflare purge-cache --zone ${{ secrets.CLOUDFLARE_ZONE_ID }} --token ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
