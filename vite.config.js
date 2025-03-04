@@ -12,6 +12,9 @@ export default defineConfig({
   
   // Base public path when served in production
   base: '/',
+
+  // Configure the public directory (relative to project root, not the root option)
+  publicDir: '../public',
   
   // Configure the build output
   build: {
