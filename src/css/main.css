@@ -27,12 +27,24 @@ body {
 
 .section-image {
   background-image: url('/img/backgrounds/parallax_1.png');
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  -webkit-backface-visibility: hidden;
+}
+
+/* Desktop - apply parallax effect */
+@media only screen and (min-width: 768px) {
+  .section-image {
+    background-attachment: fixed;
+  }
+}
+
+/* Mobile - use standard scrolling background */
+@media only screen and (max-width: 767px) {
+  .section-image {
+    background-attachment: scroll;
+  }
 }
 
 .hidden-section {
