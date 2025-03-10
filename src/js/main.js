@@ -39,6 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+  // Apply language-specific elements based on current language
+  function applyLanguageSpecificElements(lang) {
+    // Show/hide elements based on language
+    document.querySelectorAll('[data-lang-specific]').forEach(el => {
+      const specificLangs = el.dataset.langSpecific.split(' ');
+      if (specificLangs.includes(lang)) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    });
+  }
+  
   // Language switcher
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', function() {
@@ -55,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Update content
       updateLanguage(lang);
+      
+      // Apply language-specific elements
+      applyLanguageSpecificElements(lang);
       
       // Update HTML lang attribute
       document.documentElement.lang = lang;
@@ -91,6 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Update content
   updateLanguage(savedLang);
+  
+  // Apply language-specific elements for initial language
+  applyLanguageSpecificElements(savedLang);
   
   // Update HTML lang attribute
   document.documentElement.lang = savedLang;
