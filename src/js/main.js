@@ -3,6 +3,19 @@ import '../css/main.css';
 
 // Mobile menu toggle
 document.addEventListener('DOMContentLoaded', () => {
+  // Detect iOS devices and apply appropriate class for background attachment
+  function detectIOSDevice() {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    const iOS = /iphone|ipad|ipod|macintosh/.test(userAgent) && 'ontouchend' in document;
+    
+    if (iOS) {
+      document.body.classList.add('ios-device');
+    }
+  }
+  
+  // Run iOS detection
+  detectIOSDevice();
+  
   // Mobile menu toggle
   document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
     const mobileMenu = document.getElementById('mobile-menu');

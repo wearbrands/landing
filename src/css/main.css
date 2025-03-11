@@ -23,7 +23,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Will be overridden for iOS devices via JS */
 }
 
 .section-image {
@@ -31,10 +31,19 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* Apply fixed background for all devices by default */
+  background-attachment: fixed; /* Will be overridden for iOS devices via JS */
   height: 400px;
 }
 
+/* iOS specific styles that will be applied via JavaScript */
+.ios-device .hero-image,
+.ios-device .section-image {
+  background-attachment: scroll;
+}
+
+.ios-device .section-image {
+  height: 200px;
+}
 
 .hidden-section {
   display: none;
