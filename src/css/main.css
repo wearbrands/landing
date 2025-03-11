@@ -19,7 +19,7 @@ body {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/backgrounds/parallax_2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/backgrounds/hero_image.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@ body {
 }
 
 .section-image {
-  background-image: url('/img/backgrounds/parallax_1.png');
+  background-image: url('/img/backgrounds/section_image.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
