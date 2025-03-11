@@ -24,8 +24,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative; /* Added for iOS parallax effect */
-  overflow: hidden; /* Added for iOS parallax effect */
 }
 
 .section-image {
@@ -33,26 +31,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Apply fixed background for all devices by default */
   height: 400px;
-  position: relative; /* Added for iOS parallax effect */
-  overflow: hidden; /* Added for iOS parallax effect */
 }
 
-/* New class for iOS devices */
-.ios-fixed-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: inherit;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Remove fixed attachment for iOS */
-  background-attachment: scroll;
-}
 
 .hidden-section {
   display: none;
