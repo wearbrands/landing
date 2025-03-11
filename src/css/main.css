@@ -23,6 +23,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .section-image {
@@ -30,22 +31,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /* Apply fixed background for all devices by default */
   height: 400px;
 }
 
-/* Desktop - apply parallax effect */
-@media only screen and (min-width: 768px) {
-  .section-image {
-    background-attachment: fixed;
-  }
-}
-
-/* Mobile - use standard scrolling background */
-@media only screen and (max-width: 767px) {
-  .section-image {
-    background-attachment: scroll;
-  }
-}
 
 .hidden-section {
   display: none;
