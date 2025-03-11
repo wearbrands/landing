@@ -3,6 +3,55 @@ import '../css/main.css';
 
 // Mobile menu toggle
 document.addEventListener('DOMContentLoaded', () => {
+  // iOS detection
+  function isIOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  }
+
+  // Fix for background-attachment: fixed on iOS
+  if (isIOS()) {
+    document.querySelectorAll('.section-image, .hero-image').forEach(section => {
+      // Get the background image URL from computed style
+      const bgImage = getComputedStyle(section).backgroundImage;
+      const bgPosition = getComputedStyle(section).backgroundPosition;
+      const bgSize = getComputedStyle(section).backgroundSize;
+      
+      // Create inner element
+      const inner = document.createElement('div');
+      inner.classList.add('ios-fixed-bg');
+      inner.style.backgroundImage = bgImage;
+      inner.style.backgroundPosition = bgPosition;
+      inner.style.backgroundSize = bgSize;
+      
+      // Remove background from the section itself
+      section.style.backgroundImage = 'none';
+      
+      // Insert the inner element
+      section.insertBefore(inner, section.firstChild);
+      
+      // Add scroll event to handle parallax effect manually
+      let lastScrollY = window.scrollY;
+      
+      function updateParallaxPosition() {
+        const sectionRect = section.getBoundingClientRect();
+        const isVisible = 
+          sectionRect.bottom > 0 && 
+          sectionRect.top < window.innerHeight;
+          
+        if (isVisible) {
+          // Apply parallax effect (moves background more slowly than scroll)
+          inner.style.transform = `translateY(${window.scrollY * 0.4}px)`;
+        }
+      }
+      
+      // Initial position
+      updateParallaxPosition();
+      
+      // Update on scroll
+      window.addEventListener('scroll', updateParallaxPosition);
+    });
+  }
+
   // Mobile menu toggle
   document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
     const mobileMenu = document.getElementById('mobile-menu');
