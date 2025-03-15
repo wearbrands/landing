@@ -60,6 +60,11 @@ foreach ($icon in $iconSizes.GetEnumerator()) {
 Write-Host "Copying SVG for safari-pinned-tab.svg..."
 Copy-Item $sourceFile (Join-Path $finalOutputDir "safari-pinned-tab.svg")
 
+# Generate ico file using ImageMagick
+Write-Host "Generating favicon.ico..."
+& convert $sourceFile -define icon:auto-resize=64,48,32,16 favicon.ico
+Copy-Item -Force favicon.ico $finalOutputDir
+
 # Clean up temporary files
 Write-Host "Cleaning up temporary directory..."
 Remove-Item -Recurse -Force $tempOutputDir
