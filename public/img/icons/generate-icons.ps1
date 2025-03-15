@@ -63,7 +63,7 @@ Copy-Item $sourceFile (Join-Path $finalOutputDir "safari-pinned-tab.svg")
 # Generate ico file using ImageMagick
 Write-Host "Generating favicon.ico..."
 & convert $sourceFile -define icon:auto-resize=64,48,32,16 favicon.ico
-Copy-Item -Force favicon.ico $finalOutputDir
+Move-Item -Force favicon.ico $finalOutputDir
 
 # Clean up temporary files
 Write-Host "Cleaning up temporary directory..."
