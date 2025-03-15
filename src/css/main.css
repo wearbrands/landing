@@ -49,11 +49,6 @@ body {
   display: none;
 }
 
-.lang-active {
-  font-weight: 600;
-  border-bottom: 2px solid black;
-}
-
 .animate-fade-in {
   animation: fadeIn 1s ease-in;
 }

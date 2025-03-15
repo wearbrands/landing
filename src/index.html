@@ -10,7 +10,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="/img/icons/icon.svg" type="image/svg+xml">
-    <link rel="icon" href="/img/icons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
@@ -37,12 +36,7 @@
                 <img src="/img/logos/logo.svg" alt="WearBrands Logo" class="h-10">
             </div>
             
-            <!-- Language switcher -->
             <div class="flex space-x-4 items-center text-sm">
-                <button class="lang-btn lang-active" data-lang="ru">RU</button>
-                <button class="lang-btn" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="es">ES</button>
-                
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-button" class="lg:hidden ml-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -53,26 +47,26 @@
             
             <!-- Desktop Navigation -->
             <nav class="hidden lg:flex space-x-8 text-sm">
-                <a href="#about" class="hover:text-gray-500 transition" data-lang-key="nav-about">nav-about</a>
-                <a href="#how-to-order" class="hover:text-gray-500 transition" data-lang-key="nav-order">nav-order</a>
-                <a href="#pricing" class="hover:text-gray-500 transition" data-lang-key="nav-price">nav-price</a>
-                <a href="#payment" class="hover:text-gray-500 transition" data-lang-key="nav-payment">nav-payment</a>
-                <a href="#delivery" class="hover:text-gray-500 transition" data-lang-key="nav-delivery">nav-delivery</a>
-                <a href="#faq" class="hover:text-gray-500 transition" data-lang-key="nav-faq">nav-faq</a>
-                <a href="#order" class="hover:text-gray-500 transition" data-lang-key="nav-order-now">nav-order-now</a>
+                <a href="#about" class="hover:text-gray-500 transition">О нас</a>
+                <a href="#how-to-order" class="hover:text-gray-500 transition">Как заказать</a>
+                <a href="#pricing" class="hover:text-gray-500 transition">Стоимость</a>
+                <a href="#payment" class="hover:text-gray-500 transition">Оплата</a>
+                <a href="#delivery" class="hover:text-gray-500 transition">Доставка</a>
+                <a href="#faq" class="hover:text-gray-500 transition">FAQ</a>
+                <a href="#order" class="hover:text-gray-500 transition">Заказать</a>
             </nav>
         </div>
         
         <!-- Mobile Navigation -->
         <nav id="mobile-menu" class="hidden lg:hidden bg-white py-4 px-4 animate-fade-in">
             <div class="flex flex-col space-y-4">
-                <a href="#about" class="hover:text-gray-500 transition" data-lang-key="nav-about">nav-about</a>
-                <a href="#how-to-order" class="hover:text-gray-500 transition" data-lang-key="nav-order">nav-order</a>
-                <a href="#pricing" class="hover:text-gray-500 transition" data-lang-key="nav-price">nav-price</a>
-                <a href="#payment" class="hover:text-gray-500 transition" data-lang-key="nav-payment">nav-payment</a>
-                <a href="#delivery" class="hover:text-gray-500 transition" data-lang-key="nav-delivery">nav-delivery</a>
-                <a href="#faq" class="hover:text-gray-500 transition" data-lang-key="nav-faq">nav-faq</a>
-                <a href="#order" class="hover:text-gray-500 transition" data-lang-key="nav-order-now">nav-order-now</a>
+                <a href="#about" class="hover:text-gray-500 transition">О нас</a>
+                <a href="#how-to-order" class="hover:text-gray-500 transition">Как заказать</a>
+                <a href="#pricing" class="hover:text-gray-500 transition">Стоимость</a>
+                <a href="#payment" class="hover:text-gray-500 transition">Оплата</a>
+                <a href="#delivery" class="hover:text-gray-500 transition">Доставка</a>
+                <a href="#faq" class="hover:text-gray-500 transition">FAQ</a>
+                <a href="#order" class="hover:text-gray-500 transition">Заказать</a>
             </div>
         </nav>
     </header>
@@ -80,23 +74,23 @@
     <!-- Hero Section -->
     <section class="hero-image h-screen flex items-center justify-center text-white">
         <div class="container mx-auto px-4 text-center animate-fade-in">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6" data-lang-key="hero-title">hero-title</h1>
-            <p class="text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto" data-lang-key="hero-subtitle">hero-subtitle</p>
-            <a href="#order" class="mt-8 inline-block bg-white text-black px-8 py-3 font-medium hover:bg-gray-100 transition" data-lang-key="hero-cta">hero-cta</a>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">WearBrands</h1>
+            <p class="text-lg md:text-xl lg:text-2xl max-w-2xl mx-auto">Ваш личный байер премиальных брендов в Испании</p>
+            <a href="#order" class="mt-8 inline-block bg-white text-black px-8 py-3 font-medium hover:bg-gray-100 transition">Заказать сейчас</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="about-title">about-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">О нас</h2>
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div class="md:w-1/2 animate-slide-up">
                     <img src="/img/people/veronika_and_janna.jpg" alt="Вероника и Жанна" class="w-full rounded-md shadow-lg">
                 </div>
                 <div class="md:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
-                    <p class="text-lg mb-6" data-lang-key="about-description">about-description</p>
-                    <p class="text-lg" data-lang-key="about-experience">about-experience</p>
+                    <p class="text-lg mb-6">Мы — <strong>Вероника и Жанна</strong>, байеры из Испании. Помогаем вам приобрести оригинальные товары премиальных и популярных брендов по лучшим ценам. Мы работаем напрямую с магазинами и официальными представителями, чтобы предложить вам выгодные условия и удобную доставку.</p>
+                    <p class="text-lg">С нашим опытом и знанием испанского рынка мы гарантируем подлинность каждого товара и высочайший уровень сервиса для наших клиентов.</p>
                 </div>
             </div>
         </div>
@@ -105,7 +99,7 @@
     <!-- Featured Brands -->
     <section class="py-16 bg-brand-gray">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="brands-title">brands-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Популярные бренды</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
                 <a href="https://www.dior.com/es_es/fashion" target="_blank" class="transform hover:scale-105 transition duration-300">
                     <img src="/img/brands/Dior_Logo.svg" alt="Dior" class="h-12">
@@ -147,28 +141,28 @@
     <!-- How to Order Section -->
     <section id="how-to-order" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="order-title">order-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Как заказать</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-brand-gray p-8 rounded-lg text-center animate-slide-up">
                         <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="order-step1-title">order-step1-title</h3>
-                        <p data-lang-key="order-step1-desc">order-step1-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">Выберите товар</h3>
+                        <p>Выбирайте товары в нашей Telegram-группе, Instagram или на официальных сайтах брендов.</p>
                     </div>
                     <div class="bg-brand-gray p-8 rounded-lg text-center animate-slide-up" style="animation-delay: 0.2s;">
                         <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="order-step2-title">order-step2-title</h3>
-                        <p data-lang-key="order-step2-desc">order-step2-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">Свяжитесь с нами</h3>
+                        <p>Отправьте нам детали заказа через Telegram или WhatsApp, включая название, цвет, размер и ссылку.</p>
                     </div>
                     <div class="bg-brand-gray p-8 rounded-lg text-center animate-slide-up" style="animation-delay: 0.4s;">
                         <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="order-step3-title">order-step3-title</h3>
-                        <p data-lang-key="order-step3-desc">order-step3-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">Получите товар</h3>
+                        <p>Мы сообщим стоимость, оформим заказ после оплаты и организуем доставку.</p>
                     </div>
                 </div>
                 
                 <div class="mt-12 p-6 bg-brand-gray rounded-lg">
-                    <h3 class="text-xl font-semibold mb-4" data-lang-key="order-contact-title">order-contact-title</h3>
+                    <h3 class="text-xl font-semibold mb-4">Контактная информация</h3>
                     <div class="flex flex-col md:flex-row gap-4">
                         <a href="https://t.me/nikaa_fit" target="_blank" class="flex items-center gap-2 text-lg">
                             <img src="/img/social/telegram_logo.svg" alt="Telegram" class="w-6 h-6">
@@ -187,21 +181,16 @@
     <!-- Pricing Section -->
     <section id="pricing" class="py-20 bg-brand-gray">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="pricing-title">pricing-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Стоимость</h2>
             <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md animate-slide-up">
                 <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="md:w-1/2 pricing-illustration" data-lang-specific="ru">
+                    <div class="md:w-1/2 pricing-illustration">
                         <img src="/img/illustrations/pricing_illustrations.svg" alt="Pricing illustration" class="rounded-md">
                     </div>
-                    <div class="md:w-1/2 pricing-text" data-lang-specific="ru">
-                        <p class="text-xl mb-6" data-lang-key="pricing-rate">pricing-rate</p>
-                        <p class="text-lg mb-6" data-lang-key="pricing-desc">pricing-desc</p>
-                        <p class="text-lg" data-lang-key="pricing-individual">pricing-individual</p>
-                    </div>
-                    <div class="pricing-text hidden md:w-full text-center" data-lang-specific="en es">
-                        <p class="text-xl mb-6" data-lang-key="pricing-rate">pricing-rate</p>
-                        <p class="text-lg mb-6" data-lang-key="pricing-desc">pricing-desc</p>
-                        <p class="text-lg" data-lang-key="pricing-individual">pricing-individual</p>
+                    <div class="md:w-1/2 pricing-text">
+                        <p class="text-xl mb-6"><strong>Курс:</strong> 130₽ за 1€</p>
+                        <p class="text-lg mb-6">Товары рассчитываются по курсу 130₽ за 1€. Больше никаких комиссий.</p>
+                        <p class="text-lg">Обращайтесь, чтобы получить индивидуальное предложение по стоимости.</p>
                     </div>
                 </div>
             </div>
@@ -211,23 +200,23 @@
     <!-- Payment Section -->
     <section id="payment" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="payment-title">payment-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Оплата</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="p-8 border border-gray-200 rounded-lg text-center hover:shadow-lg transition animate-slide-up">
                         <img src="/img/payment_methods/ruble_symbol.svg" alt="Visa" class="w-12 h-12 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="payment-rub-title">payment-rub-title</h3>
-                        <p data-lang-key="payment-rub-desc">payment-rub-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">В рублях</h3>
+                        <p>На карту российского банка</p>
                     </div>
                     <div class="p-8 border border-gray-200 rounded-lg text-center hover:shadow-lg transition animate-slide-up" style="animation-delay: 0.2s;">
                         <img src="/img/payment_methods/euro_symbol.svg" alt="Visa" class="w-12 h-12 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="payment-eur-title">payment-eur-title</h3>
-                        <p data-lang-key="payment-eur-desc">payment-eur-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">В евро</h3>
+                        <p>Через Bizum, IBAN или наличными (по договорённости)</p>
                     </div>
                     <div class="p-8 border border-gray-200 rounded-lg text-center hover:shadow-lg transition animate-slide-up" style="animation-delay: 0.4s;">
                         <img src="/img/payment_methods/usdt_symbol.svg" alt="Crypto" class="w-12 h-12 mx-auto mb-4">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="payment-crypto-title">payment-crypto-title</h3>
-                        <p data-lang-key="payment-crypto-desc">payment-crypto-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">В криптовалюте</h3>
+                        <p>USDT на Bybit</p>
                     </div>
                 </div>
             </div>
@@ -240,30 +229,30 @@
     <!-- Delivery Section -->
     <section id="delivery" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="delivery-title">delivery-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Доставка</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-brand-gray p-8 rounded-lg animate-slide-up">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="delivery-time-title">delivery-time-title</h3>
+                        <h3 class="text-xl font-semibold mb-4">Сроки доставки</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg>
-                                <span data-lang-key="delivery-regular">delivery-regular</span>
+                                <span>Стандартная доставка: 2-3 недели</span>
                             </li>
                             <li class="flex items-start">
                                 <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <polyline points="20 6 9 17 4 12" />
                                 </svg>
-                                <span data-lang-key="delivery-express">delivery-express</span>
+                                <span>Доступна срочная доставка курьером</span>
                             </li>
                         </ul>
                     </div>
                     <div class="bg-brand-gray p-8 rounded-lg animate-slide-up" style="animation-delay: 0.2s;">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="delivery-cost-title">delivery-cost-title</h3>
-                        <p class="mb-4" data-lang-key="delivery-cost-desc">delivery-cost-desc</p>
-                        <p data-lang-key="delivery-cost-individual">delivery-cost-individual</p>
+                        <h3 class="text-xl font-semibold mb-4">Стоимость доставки</h3>
+                        <p class="mb-4">Примерно 20 евро за килограмм груза.</p>
+                        <p>Точная стоимость доставки рассчитывается индивидуально в зависимости от веса и объема заказа.</p>
                     </div>
                 </div>
             </div>
@@ -273,13 +262,13 @@
     <!-- Return Section -->
     <section id="return" class="py-20 bg-brand-gray">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="return-title">return-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Возврат</h2>
             <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md animate-slide-up">
                 <div class="flex flex-col md:flex-row gap-8 items-center">
                     <div class="md:w-1/2">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="return-policy-title">return-policy-title</h3>
-                        <p class="mb-4" data-lang-key="return-policy-desc">return-policy-desc</p>
-                        <p data-lang-key="return-policy-process">return-policy-process</p>
+                        <h3 class="text-xl font-semibold mb-4">Политика возврата</h3>
+                        <p class="mb-4">Возврат возможен, но осуществляется за счёт покупателя.</p>
+                        <p>Присылайте товар обратно. Мы вам вернём стоимость по курсу ЦБ.</p>
                     </div>
                     <div class="md:w-1/2">
                         <img src="/img/illustrations/return_process_illustration.svg" alt="Return process illustration" class="rounded-md">
@@ -292,16 +281,16 @@
     <!-- Authenticity Section -->
     <section id="authenticity" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="auth-title">auth-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Подтверждение оригинальности</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-brand-gray p-8 rounded-lg animate-slide-up">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="auth-offline-title">auth-offline-title</h3>
-                        <p data-lang-key="auth-offline-desc">auth-offline-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">Офлайн магазины</h3>
+                        <p>Если выкуп происходит из офлайн магазина, мы предоставляем видео выкупа и чек.</p>
                     </div>
                     <div class="bg-brand-gray p-8 rounded-lg animate-slide-up" style="animation-delay: 0.2s;">
-                        <h3 class="text-xl font-semibold mb-4" data-lang-key="auth-online-title">auth-online-title</h3>
-                        <p data-lang-key="auth-online-desc">auth-online-desc</p>
+                        <h3 class="text-xl font-semibold mb-4">Онлайн магазины</h3>
+                        <p>Из официальных онлайн магазинов прикладываем счёт-фактуру.</p>
                     </div>
                 </div>
             </div>
@@ -311,62 +300,62 @@
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-brand-gray">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="faq-title">faq-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Часто задаваемые вопросы</h2>
             <div class="max-w-3xl mx-auto">
                 <div class="space-y-6 animate-slide-up">
                     <div class="bg-white p-6 rounded-lg shadow-sm">
                         <button class="faq-question w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-medium" data-lang-key="faq-q1">faq-q1</h3>
+                            <h3 class="text-lg font-medium">Как заказать товар, если сайт бренда не открывается?</h3>
                             <svg class="w-5 h-5 transform transition-transform faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
                         </button>
                         <div class="faq-answer hidden mt-4">
-                            <p data-lang-key="faq-a1">faq-a1</p>
+                            <p>Если сайт не открывается, попробуйте использовать VPN. Либо отправьте нам название товара, и мы поможем вам найти его.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-sm">
                         <button class="faq-question w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-medium" data-lang-key="faq-q2">faq-q2</h3>
+                            <h3 class="text-lg font-medium">Можно ли заказать товар, которого нет на сайте бренда?</h3>
                             <svg class="w-5 h-5 transform transition-transform faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
                         </button>
                         <div class="faq-answer hidden mt-4">
-                            <p data-lang-key="faq-a2">faq-a2</p>
+                            <p>Да, мы можем найти товары, которых нет на официальных сайтах. У нас есть доступ к офлайн-магазинам в Испании.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-sm">
                         <button class="faq-question w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-medium" data-lang-key="faq-q3">faq-q3</h3>
+                            <h3 class="text-lg font-medium">Сколько времени занимает доставка?</h3>
                             <svg class="w-5 h-5 transform transition-transform faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
                         </button>
                         <div class="faq-answer hidden mt-4">
-                            <p data-lang-key="faq-a3">faq-a3</p>
+                            <p>Средний срок доставки — 2-3 недели. Также доступна срочная доставка курьером.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-sm">
                         <button class="faq-question w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-medium" data-lang-key="faq-q4">faq-q4</h3>
+                            <h3 class="text-lg font-medium">Как подтверждается оригинальность товара?</h3>
                             <svg class="w-5 h-5 transform transition-transform faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
                         </button>
                         <div class="faq-answer hidden mt-4">
-                            <p data-lang-key="faq-a4">faq-a4</p>
+                            <p>Если выкуп происходит из офлайн магазина, то предоставляем видео выкупа, чек. Из онлайн магазина прикладываем счёт-фактуру.</p>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-sm">
                         <button class="faq-question w-full text-left flex justify-between items-center">
-                            <h3 class="text-lg font-medium" data-lang-key="faq-q5">faq-q5</h3>
+                            <h3 class="text-lg font-medium">Можно ли вернуть товар?</h3>
                             <svg class="w-5 h-5 transform transition-transform faq-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9" />
                             </svg>
                         </button>
                         <div class="faq-answer hidden mt-4">
-                            <p data-lang-key="faq-a5">faq-a5</p>
+                            <p>Да, возврат возможен, но осуществляется за счёт покупателя. Присылайте товар обратно, и мы вернём вам стоимость по курсу ЦБ.</p>
                         </div>
                     </div>
                 </div>
@@ -377,7 +366,7 @@
     <!-- Contact Form Section -->
     <section id="order" class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="contact-title">contact-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Оформить заказ</h2>
             <div class="max-w-3xl mx-auto animate-slide-up">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaT558O92Foi4tDb5jU-UUk479esOUWAMAvM1psOq2ULixuA/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
             </div>
@@ -387,19 +376,19 @@
     <!-- Social Media Section -->
     <section id="social" class="py-20 bg-brand-gray">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold mb-12 text-center" data-lang-key="social-title">social-title</h2>
+            <h2 class="text-3xl font-semibold mb-12 text-center">Мы в социальных сетях</h2>
             <div class="flex flex-wrap justify-center gap-8 animate-slide-up">
                 <a href="https://t.me/wear_brands_spain" target="_blank" class="flex flex-col items-center transform hover:scale-105 transition duration-300">
                     <img src="/img/social/telegram_logo.svg" alt="Telegram" class="w-16 h-16 mb-4">
-                    <span class="text-lg font-medium" data-lang-key="social-telegram">social-telegram</span>
+                    <span class="text-lg font-medium">Telegram</span>
                 </a>
                 <a href="https://www.instagram.com/wearbrand.s/" target="_blank" class="flex flex-col items-center transform hover:scale-105 transition duration-300">
                     <img src="/img/social/instagram_logo.svg" alt="Instagram" class="w-16 h-16 mb-4">
-                    <span class="text-lg font-medium" data-lang-key="social-instagram">social-instagram</span>
+                    <span class="text-lg font-medium">Instagram</span>
                 </a>
                 <a href="https://www.tiktok.com/@wear.brands" target="_blank" class="flex flex-col items-center transform hover:scale-105 transition duration-300">
                     <img src="/img/social/tiktok_logo.svg" alt="TikTok" class="w-16 h-16 mb-4">
-                    <span class="text-lg font-medium" data-lang-key="social-tiktok">social-tiktok</span>
+                    <span class="text-lg font-medium">TikTok</span>
                 </a>
             </div>
         </div>
@@ -411,20 +400,20 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <img src="/img/logos/logo_with_slogan.svg" alt="WearBrands Logo" class="h-12 mb-4">
-                    <p class="text-gray-400" data-lang-key="footer-copyright">footer-copyright</p>
+                    <p class="text-gray-400">© 2025 WearBrands. Все права защищены.</p>
                 </div>
                 <div class="flex flex-col md:flex-row gap-8">
                     <div>
-                        <h3 class="text-lg font-semibold mb-4" data-lang-key="footer-nav">footer-nav</h3>
+                        <h3 class="text-lg font-semibold mb-4">Навигация</h3>
                         <ul class="space-y-2">
-                            <li><a href="#about" class="text-gray-400 hover:text-white transition" data-lang-key="nav-about">nav-about</a></li>
-                            <li><a href="#how-to-order" class="text-gray-400 hover:text-white transition" data-lang-key="nav-order">nav-order</a></li>
-                            <li><a href="#pricing" class="text-gray-400 hover:text-white transition" data-lang-key="nav-price">nav-price</a></li>
-                            <li><a href="#faq" class="text-gray-400 hover:text-white transition" data-lang-key="nav-faq">nav-faq</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition">О нас</a></li>
+                            <li><a href="#how-to-order" class="text-gray-400 hover:text-white transition">Как заказать</a></li>
+                            <li><a href="#pricing" class="text-gray-400 hover:text-white transition">Стоимость</a></li>
+                            <li><a href="#faq" class="text-gray-400 hover:text-white transition">FAQ</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-lg font-semibold mb-4" data-lang-key="footer-contacts">footer-contacts</h3>
+                        <h3 class="text-lg font-semibold mb-4">Контакты</h3>
                         <ul class="space-y-2">
                             <li><a href="https://t.me/nikaa_fit" class="text-gray-400 hover:text-white transition">Telegram</a></li>
                             <li><a href="https://wa.me/34653037409" class="text-gray-400 hover:text-white transition">WhatsApp: +34 653 037 409</a></li>
@@ -434,305 +423,5 @@
             </div>
         </div>
     </footer>
-
-    <!-- Language resources -->
-    <div id="lang-resources" style="display: none;">
-        <!-- Russian language -->
-        <div id="lang-ru">
-            <!-- Navigation -->
-            <span data-key="nav-about">О нас</span>
-            <span data-key="nav-order">Как заказать</span>
-            <span data-key="nav-price">Стоимость</span>
-            <span data-key="nav-payment">Оплата</span>
-            <span data-key="nav-delivery">Доставка</span>
-            <span data-key="nav-faq">FAQ</span>
-            <span data-key="nav-order-now">Заказать</span>
-            
-            <!-- Hero -->
-            <span data-key="hero-title">WearBrands</span>
-            <span data-key="hero-subtitle">Ваш личный байер премиальных брендов в Испании</span>
-            <span data-key="hero-cta">Заказать сейчас</span>
-            
-            <!-- About -->
-            <span data-key="about-title">О нас</span>
-            <span data-key="about-description">Мы — <strong>Вероника и Жанна</strong>, байеры из Испании. Помогаем вам приобрести оригинальные товары премиальных и популярных брендов по лучшим ценам. Мы работаем напрямую с магазинами и официальными представителями, чтобы предложить вам выгодные условия и удобную доставку.</span>
-            <span data-key="about-experience">С нашим опытом и знанием испанского рынка мы гарантируем подлинность каждого товара и высочайший уровень сервиса для наших клиентов.</span>
-            
-            <!-- Brands -->
-            <span data-key="brands-title">Популярные бренды</span>
-            
-            <!-- How to Order -->
-            <span data-key="order-title">Как заказать</span>
-            <span data-key="order-step1-title">Выберите товар</span>
-            <span data-key="order-step1-desc">Выбирайте товары в нашей Telegram-группе, Instagram или на официальных сайтах брендов.</span>
-            <span data-key="order-step2-title">Свяжитесь с нами</span>
-            <span data-key="order-step2-desc">Отправьте нам детали заказа через Telegram или WhatsApp, включая название, цвет, размер и ссылку.</span>
-            <span data-key="order-step3-title">Получите товар</span>
-            <span data-key="order-step3-desc">Мы сообщим стоимость, оформим заказ после оплаты и организуем доставку.</span>
-            <span data-key="order-contact-title">Контактная информация</span>
-            
-            <!-- Pricing -->
-            <span data-key="pricing-title">Стоимость</span>
-            <span data-key="pricing-rate"><strong>Курс:</strong> 130₽ за 1€</span>
-            <span data-key="pricing-desc">Товары рассчитываются по курсу 130₽ за 1€. Больше никаких комиссий.</span>
-            <span data-key="pricing-individual">Обращайтесь, чтобы получить индивидуальное предложение по стоимости.</span>
-            
-            <!-- Payment -->
-            <span data-key="payment-title">Оплата</span>
-            <span data-key="payment-rub-title">В рублях</span>
-            <span data-key="payment-rub-desc">На карту российского банка</span>
-            <span data-key="payment-eur-title">В евро</span>
-            <span data-key="payment-eur-desc">Через Bizum, IBAN или наличными (по договорённости)</span>
-            <span data-key="payment-crypto-title">В криптовалюте</span>
-            <span data-key="payment-crypto-desc">USDT на Bybit</span>
-            
-            <!-- Delivery -->
-            <span data-key="delivery-title">Доставка</span>
-            <span data-key="delivery-time-title">Сроки доставки</span>
-            <span data-key="delivery-regular">Стандартная доставка: 2-3 недели</span>
-            <span data-key="delivery-express">Доступна срочная доставка курьером</span>
-            <span data-key="delivery-cost-title">Стоимость доставки</span>
-            <span data-key="delivery-cost-desc">Примерно 20 евро за килограмм груза.</span>
-            <span data-key="delivery-cost-individual">Точная стоимость доставки рассчитывается индивидуально в зависимости от веса и объема заказа.</span>
-            
-            <!-- Return -->
-            <span data-key="return-title">Возврат</span>
-            <span data-key="return-policy-title">Политика возврата</span>
-            <span data-key="return-policy-desc">Возврат возможен, но осуществляется за счёт покупателя.</span>
-            <span data-key="return-policy-process">Присылайте товар обратно. Мы вам вернём стоимость по курсу ЦБ.</span>
-            
-            <!-- Authenticity -->
-            <span data-key="auth-title">Подтверждение оригинальности</span>
-            <span data-key="auth-offline-title">Офлайн магазины</span>
-            <span data-key="auth-offline-desc">Если выкуп происходит из офлайн магазина, мы предоставляем видео выкупа и чек.</span>
-            <span data-key="auth-online-title">Онлайн магазины</span>
-            <span data-key="auth-online-desc">Из официальных онлайн магазинов прикладываем счёт-фактуру.</span>
-            
-            <!-- FAQ -->
-            <span data-key="faq-title">Часто задаваемые вопросы</span>
-            <span data-key="faq-q1">Как заказать товар, если сайт бренда не открывается?</span>
-            <span data-key="faq-a1">Если сайт не открывается, попробуйте использовать VPN. Либо отправьте нам название товара, и мы поможем вам найти его.</span>
-            <span data-key="faq-q2">Можно ли заказать товар, которого нет на сайте бренда?</span>
-            <span data-key="faq-a2">Да, мы можем найти товары, которых нет на официальных сайтах. У нас есть доступ к офлайн-магазинам в Испании.</span>
-            <span data-key="faq-q3">Сколько времени занимает доставка?</span>
-            <span data-key="faq-a3">Средний срок доставки — 2-3 недели. Также доступна срочная доставка курьером.</span>
-            <span data-key="faq-q4">Как подтверждается оригинальность товара?</span>
-            <span data-key="faq-a4">Если выкуп происходит из офлайн магазина, то предоставляем видео выкупа, чек. Из онлайн магазина прикладываем счёт-фактуру.</span>
-            <span data-key="faq-q5">Можно ли вернуть товар?</span>
-            <span data-key="faq-a5">Да, возврат возможен, но осуществляется за счёт покупателя. Присылайте товар обратно, и мы вернём вам стоимость по курсу ЦБ.</span>
-            
-            <!-- Contact Form -->
-            <span data-key="contact-title">Оформить заказ</span>
-            
-            <!-- Social -->
-            <span data-key="social-title">Мы в социальных сетях</span>
-            <span data-key="social-telegram">Telegram</span>
-            <span data-key="social-instagram">Instagram</span>
-            <span data-key="social-tiktok">TikTok</span>
-            
-            <!-- Footer -->
-            <span data-key="footer-copyright">© 2025 WearBrands. Все права защищены.</span>
-            <span data-key="footer-nav">Навигация</span>
-            <span data-key="footer-contacts">Контакты</span>
-        </div>
-        
-        <!-- English language -->
-        <div id="lang-en">
-            <!-- Navigation -->
-            <span data-key="nav-about">About us</span>
-            <span data-key="nav-order">How to order</span>
-            <span data-key="nav-price">Pricing</span>
-            <span data-key="nav-payment">Payment</span>
-            <span data-key="nav-delivery">Delivery</span>
-            <span data-key="nav-faq">FAQ</span>
-            <span data-key="nav-order-now">Order now</span>
-            
-            <!-- Hero -->
-            <span data-key="hero-title">WearBrands</span>
-            <span data-key="hero-subtitle">Your personal buyer of premium brands in Spain</span>
-            <span data-key="hero-cta">Order now</span>
-            
-            <!-- About -->
-            <span data-key="about-title">About us</span>
-            <span data-key="about-description">We are <strong>Veronika and Janna</strong>, buyers from Spain. We help you purchase original products from premium and popular brands at the best prices. We work directly with stores and official representatives to offer you favorable conditions and convenient delivery.</span>
-            <span data-key="about-experience">With our experience and knowledge of the Spanish market, we guarantee the authenticity of each product and the highest level of service for our clients.</span>
-            
-            <!-- Brands -->
-            <span data-key="brands-title">Popular brands</span>
-            
-            <!-- How to Order -->
-            <span data-key="order-title">How to order</span>
-            <span data-key="order-step1-title">Choose a product</span>
-            <span data-key="order-step1-desc">Choose products in our Telegram group, Instagram, or on the official brand websites.</span>
-            <span data-key="order-step2-title">Contact us</span>
-            <span data-key="order-step2-desc">Send us the order details via Telegram or WhatsApp, including the name, color, size, and link.</span>
-            <span data-key="order-step3-title">Receive your product</span>
-            <span data-key="order-step3-desc">We will inform you of the cost, process the order after payment, and arrange delivery.</span>
-            <span data-key="order-contact-title">Contact information</span>
-            
-            <!-- Pricing -->
-            <span data-key="pricing-title">Pricing</span>
-            <span data-key="pricing-rate"><strong>Commission:</strong> 10% of the order price</span>
-            <span data-key="pricing-desc">Our service fee is 10% of your total order value. Simple and transparent.</span>
-            <span data-key="pricing-individual">Contact us for bulk orders or special requests to discuss custom pricing options.</span>
-            
-            <!-- Payment -->
-            <span data-key="payment-title">Payment</span>
-            <span data-key="payment-rub-title">In rubles</span>
-            <span data-key="payment-rub-desc">To a Russian bank card</span>
-            <span data-key="payment-eur-title">In euros</span>
-            <span data-key="payment-eur-desc">Via Bizum, IBAN, or cash (by arrangement)</span>
-            <span data-key="payment-crypto-title">In cryptocurrency</span>
-            <span data-key="payment-crypto-desc">USDT on Bybit</span>
-            
-            <!-- Delivery -->
-            <span data-key="delivery-title">Delivery</span>
-            <span data-key="delivery-time-title">Delivery times</span>
-            <span data-key="delivery-regular">Standard delivery: 2-3 weeks</span>
-            <span data-key="delivery-express">Express delivery by courier is available</span>
-            <span data-key="delivery-cost-title">Delivery cost</span>
-            <span data-key="delivery-cost-desc">Approximately 20 euros per kilogram of cargo.</span>
-            <span data-key="delivery-cost-individual">The exact delivery cost is calculated individually depending on the weight and volume of the order.</span>
-            
-            <!-- Return -->
-            <span data-key="return-title">Returns</span>
-            <span data-key="return-policy-title">Return policy</span>
-            <span data-key="return-policy-desc">Returns are possible but are made at the buyer's expense.</span>
-            <span data-key="return-policy-process">Send the product back. We will refund the cost at the Central Bank exchange rate.</span>
-            
-            <!-- Authenticity -->
-            <span data-key="auth-title">Authenticity confirmation</span>
-            <span data-key="auth-offline-title">Offline stores</span>
-            <span data-key="auth-offline-desc">If the purchase is made from an offline store, we provide a video of the purchase and a receipt.</span>
-            <span data-key="auth-online-title">Online stores</span>
-            <span data-key="auth-online-desc">For official online stores, we attach the invoice.</span>
-            
-            <!-- FAQ -->
-            <span data-key="faq-title">Frequently Asked Questions</span>
-            <span data-key="faq-q1">How do I order a product if the brand's website doesn't open?</span>
-            <span data-key="faq-a1">If the website doesn't open, try using a VPN. Or send us the product name, and we'll help you find it.</span>
-            <span data-key="faq-q2">Can I order a product that's not on the brand's website?</span>
-            <span data-key="faq-a2">Yes, we can find products that are not on official websites. We have access to offline stores in Spain.</span>
-            <span data-key="faq-q3">How long does delivery take?</span>
-            <span data-key="faq-a3">The average delivery time is 2-3 weeks. Express delivery by courier is also available.</span>
-            <span data-key="faq-q4">How is product authenticity confirmed?</span>
-            <span data-key="faq-a4">If the purchase is from an offline store, we provide a video of the purchase and a receipt. From online stores, we attach the invoice.</span>
-            <span data-key="faq-q5">Can I return a product?</span>
-            <span data-key="faq-a5">Yes, returns are possible but are made at the buyer's expense. Send the product back, and we will refund the cost at the Central Bank exchange rate.</span>
-            
-            <!-- Contact Form -->
-            <span data-key="contact-title">Place an order</span>
-            
-            <!-- Social -->
-            <span data-key="social-title">Find us on social media</span>
-            <span data-key="social-telegram">Telegram</span>
-            <span data-key="social-instagram">Instagram</span>
-            <span data-key="social-tiktok">TikTok</span>
-            
-            <!-- Footer -->
-            <span data-key="footer-copyright">© 2025 WearBrands. All rights reserved.</span>
-            <span data-key="footer-nav">Navigation</span>
-            <span data-key="footer-contacts">Contacts</span>
-        </div>
-        
-        <!-- Spanish language -->
-        <div id="lang-es">
-            <!-- Navigation -->
-            <span data-key="nav-about">Sobre nosotros</span>
-            <span data-key="nav-order">Cómo pedir</span>
-            <span data-key="nav-price">Precios</span>
-            <span data-key="nav-payment">Pago</span>
-            <span data-key="nav-delivery">Envío</span>
-            <span data-key="nav-faq">FAQ</span>
-            <span data-key="nav-order-now">Ordenar</span>
-            
-            <!-- Hero -->
-            <span data-key="hero-title">WearBrands</span>
-            <span data-key="hero-subtitle">Tu comprador personal de marcas premium en España</span>
-            <span data-key="hero-cta">Ordenar ahora</span>
-            
-            <!-- About -->
-            <span data-key="about-title">Sobre nosotros</span>
-            <span data-key="about-description">Somos <strong>Veronika y Janna</strong>, compradoras de España. Te ayudamos a adquirir productos originales de marcas premium y populares a los mejores precios. Trabajamos directamente con tiendas y representantes oficiales para ofrecerte condiciones favorables y envío conveniente.</span>
-            <span data-key="about-experience">Con nuestra experiencia y conocimiento del mercado español, garantizamos la autenticidad de cada producto y el más alto nivel de servicio para nuestros clientes.</span>
-            
-            <!-- Brands -->
-            <span data-key="brands-title">Marcas populares</span>
-            
-            <!-- How to Order -->
-            <span data-key="order-title">Cómo pedir</span>
-            <span data-key="order-step1-title">Elige un producto</span>
-            <span data-key="order-step1-desc">Elige productos en nuestro grupo de Telegram, Instagram o en los sitios web oficiales de las marcas.</span>
-            <span data-key="order-step2-title">Contáctanos</span>
-            <span data-key="order-step2-desc">Envíanos los detalles del pedido por Telegram o WhatsApp, incluyendo nombre, color, talla y enlace.</span>
-            <span data-key="order-step3-title">Recibe tu producto</span>
-            <span data-key="order-step3-desc">Te informaremos del coste, procesaremos el pedido después del pago y organizaremos el envío.</span>
-            <span data-key="order-contact-title">Información de contacto</span>
-            
-            <!-- Pricing -->
-            <span data-key="pricing-title">Precios</span>
-            <span data-key="pricing-rate"><strong>Comisión:</strong> 10% del precio del pedido</span>
-            <span data-key="pricing-desc">Nuestra tarifa de servicio es del 10% del valor total de tu pedido. Simple y transparente.</span>
-            <span data-key="pricing-individual">Contáctanos para pedidos al por mayor o solicitudes especiales para discutir opciones de precios personalizados.</span>
-            
-            <!-- Payment -->
-            <span data-key="payment-title">Pago</span>
-            <span data-key="payment-rub-title">En rublos</span>
-            <span data-key="payment-rub-desc">A una tarjeta bancaria rusa</span>
-            <span data-key="payment-eur-title">En euros</span>
-            <span data-key="payment-eur-desc">A través de Bizum, IBAN o efectivo (según acuerdo)</span>
-            <span data-key="payment-crypto-title">En criptomoneda</span>
-            <span data-key="payment-crypto-desc">USDT en Bybit</span>
-            
-            <!-- Delivery -->
-            <span data-key="delivery-title">Envío</span>
-            <span data-key="delivery-time-title">Tiempos de entrega</span>
-            <span data-key="delivery-regular">Entrega estándar: 2-3 semanas</span>
-            <span data-key="delivery-express">Está disponible la entrega express por mensajero</span>
-            <span data-key="delivery-cost-title">Coste de envío</span>
-            <span data-key="delivery-cost-desc">Aproximadamente 20 euros por kilogramo de carga.</span>
-            <span data-key="delivery-cost-individual">El coste exacto de envío se calcula individualmente dependiendo del peso y volumen del pedido.</span>
-            
-            <!-- Return -->
-            <span data-key="return-title">Devoluciones</span>
-            <span data-key="return-policy-title">Política de devoluciones</span>
-            <span data-key="return-policy-desc">Las devoluciones son posibles pero corren a cargo del comprador.</span>
-            <span data-key="return-policy-process">Envía el producto de vuelta. Reembolsaremos el coste al tipo de cambio del Banco Central.</span>
-            
-            <!-- Authenticity -->
-            <span data-key="auth-title">Confirmación de autenticidad</span>
-            <span data-key="auth-offline-title">Tiendas físicas</span>
-            <span data-key="auth-offline-desc">Si la compra se realiza en una tienda física, proporcionamos un video de la compra y un recibo.</span>
-            <span data-key="auth-online-title">Tiendas online</span>
-            <span data-key="auth-online-desc">Para tiendas online oficiales, adjuntamos la factura.</span>
-            
-            <!-- FAQ -->
-            <span data-key="faq-title">Preguntas frecuentes</span>
-            <span data-key="faq-q1">¿Cómo pido un producto si el sitio web de la marca no se abre?</span>
-            <span data-key="faq-a1">Si el sitio web no se abre, intenta usar una VPN. O envíanos el nombre del producto y te ayudaremos a encontrarlo.</span>
-            <span data-key="faq-q2">¿Puedo pedir un producto que no está en el sitio web de la marca?</span>
-            <span data-key="faq-a2">Sí, podemos encontrar productos que no están en los sitios web oficiales. Tenemos acceso a tiendas físicas en España.</span>
-            <span data-key="faq-q3">¿Cuánto tarda la entrega?</span>
-            <span data-key="faq-a3">El tiempo medio de entrega es de 2-3 semanas. También está disponible la entrega express por mensajero.</span>
-            <span data-key="faq-q4">¿Cómo se confirma la autenticidad del producto?</span>
-            <span data-key="faq-a4">Si la compra es de una tienda física, proporcionamos un video de la compra y un recibo. De las tiendas online, adjuntamos la factura.</span>
-            <span data-key="faq-q5">¿Puedo devolver un producto?</span>
-            <span data-key="faq-a5">Sí, las devoluciones son posibles pero corren a cargo del comprador. Envía el producto de vuelta y te reembolsaremos el coste al tipo de cambio del Banco Central.</span>
-            
-            <!-- Contact Form -->
-            <span data-key="contact-title">Realizar un pedido</span>
-            
-            <!-- Social -->
-            <span data-key="social-title">Encuéntranos en redes sociales</span>
-            <span data-key="social-telegram">Telegram</span>
-            <span data-key="social-instagram">Instagram</span>
-            <span data-key="social-tiktok">TikTok</span>
-            
-            <!-- Footer -->
-            <span data-key="footer-copyright">© 2025 WearBrands. Todos los derechos reservados.</span>
-            <span data-key="footer-nav">Navegación</span>
-            <span data-key="footer-contacts">Contactos</span>
-        </div>
-    </div>
 </body>
 </html>
