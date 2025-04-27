@@ -14,6 +14,7 @@ $iconSizes = @{
     "mstile-150x150.png" = 150
     "android-chrome-192x192.png" = 192
     "android-chrome-512x512.png" = 512
+    "telegram-sticker-pack-icon" = 100
 }
 
 # Create temporary and final output directories if they don't exist
