@@ -130,6 +130,7 @@
 ### Контакты
 - Telegram: [https://t.me/nikaa_fit](https://t.me/nikaa_fit)
 - WhatsApp: [+34 653 037 409](https://wa.me/34653037409)
+- [Landing page](https://wearbrands.vip)
 
 ### Социальные сети
 - Telegram: [https://t.me/wear_brands_spain](https://t.me/wear_brands_spain)
