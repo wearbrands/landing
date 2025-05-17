@@ -18,14 +18,6 @@ body {
   color: var(--brand-black);
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/backgrounds/hero_image.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; /* Will be overridden for iOS devices via JS */
-}
-
 .section-image {
   background-image: url('/img/backgrounds/section_image.png');
   background-position: center;
